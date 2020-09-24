@@ -20,3 +20,6 @@ class HTTP_org_page(BasePage):
 
     def click_HTTP_delete_TRYitOUT_button(self):
         click_bar(self.driver, PageLocators.HTTP_Methods_DELETE_TRYitOUT_button).click()
+
+    def get_button_TRYitOUT_CANCEL_text(self):
+        return get_element(self.driver, PageLocators.HTTP_Methods_TRYitOUT_button_pushed).text

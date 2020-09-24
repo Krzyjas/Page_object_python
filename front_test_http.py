@@ -21,7 +21,7 @@ class TestPage(unittest.TestCase):
         Http_methods.click_Http_methods_bar()
         Http_methods.click_Http_delete_bar()
         Http_methods.click_HTTP_delete_TRYitOUT_button()
-
+        self.assertEqual('Cancel', Http_methods.get_button_TRYitOUT_CANCEL_text())
 
 
 
